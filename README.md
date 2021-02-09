@@ -1,0 +1,1 @@
+# aspose-ocr-cloud-nodejs
