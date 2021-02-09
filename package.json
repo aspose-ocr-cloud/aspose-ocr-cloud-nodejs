@@ -1,0 +1,52 @@
+{
+  "name": "@asposecloud/aspose-ocr-cloud",
+  "version": "21.2.0",
+  "description": "Aspose.OCR Cloud Node.js SDK",
+  "license": "MIT",
+  "main": "./src/index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "test": "node ./node_modules/mocha/bin/mocha --recursive"
+  },
+  "keywords": [
+    "Aspose",
+    "OCR",
+    "Cloud",
+    "image2text",
+    "text recognition",
+    "image to text",
+    "recognize text",
+    "detect text",
+    "extract text",
+    "scan image"
+  ],
+  "browser": {
+    "fs": false
+  },
+  "dependencies": {
+    "chai": "^4.1.2",
+    "enum": "^3.0.4",
+    "jsdoc": "^3.6.6",
+    "nodeunit": "^0.11.3",
+    "superagent": "5.1.0",
+    "sync-request": "^6.0.0"
+  },
+  "devDependencies": {
+    "expect.js": "~0.3.1",
+    "mocha": "^8.1.0",
+    "sinon": "1.17.3"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "test",
+    "source": "src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aspose-ocr-cloud/aspose-ocr-cloud-nodejs.git"
+  },
+  "author": {
+    "name": "Aspose OCR Cloud",
+    "url": "https://github.com/aspose-ocr-cloud"
+  }
+}
