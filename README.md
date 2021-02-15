@@ -67,6 +67,7 @@ var conf = {
     "authPath":"https://api.aspose.cloud/connect/token",
     "apiKey":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "appSID":"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    
 };
 
 //Create storage api for upload to server
@@ -137,48 +138,24 @@ module: {
 }
 ```
 
-## Sample usage
-Before fill all fields in configuration object (see [demo](./demo/))   
+## OCR from URL in Node.Js
 
-```javascript
-var conf = {
-    "basePath":"https://api.aspose.cloud/v3.0",
-    "authPath":"https://api.aspose.cloud/connect/token",
-    "apiKey":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "appSID":"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
-};
+```js
+	// Get your ClientId and ClientSecret from https://dashboard.aspose.cloud (free registration required).
+	var conf = {
+		"apiKey":"MY_CLIENT_SECRET",
+		"appSID":"MY_CLIENT_ID",
+		"basePath":"https://api.aspose.cloud/v3.0",
+		"authPath":"https://api.aspose.cloud/connect/token"
+	};
+	
+	const ocrApi = new Asposeocrcloud.OcrApi(conf);
 
-//Create storage api for upload to server
-var fs = require('fs');
-var path = require('path');
-var instance = new Asposeocrcloud.OcrApi(conf);
-
-var buffer = Buffer.alloc(1024 * 50);
-var fileData = fs.readFileSync(YOUR_FILE_PATH, buffer);
-
-instance.RecognizeFromContentAuto(fileData, function (err, data, res) {
-    console.log(data);
-});
-
-var imageUrl = "https://upload.wikimedia.org/wikipedia/commons/2/2f/Book_of_Abraham_FirstPage.png";
-instance.RecognizeFromUrlAuto(imageUrl, function (err, data, res) {
-    console.log(data);
-});
-
-
-var regions = [
-    new Asposeocrcloud.OCRRegion(0, new Asposeocrcloud.OCRRect(209,28,283,39)),
-    new Asposeocrcloud.OCRRegion(1, new Asposeocrcloud.OCRRect(24,114,359,185)),
-    new Asposeocrcloud.OCRRegion(2, new Asposeocrcloud.OCRRect(21,201,356,451)),
-    new Asposeocrcloud.OCRRegion(3, new Asposeocrcloud.OCRRect(21,464,359,558))];
-
-var requestData = new Asposeocrcloud.OCRRequestData(regions, Asposeocrcloud.Language.English, false);
-instance.RecognizeRegionsFromUrl(imageUrl, requestData, function (err, data, res) {
-    console.log(data);
-});
-
+	var imageUrl = "https://upload.wikimedia.org/wikipedia/commons/2/2f/Book_of_Abraham_FirstPage.png";
+	ocrApi.RecognizeFromUrlAuto(imageUrl, function (err, data, res) {
+		console.log(data);
+	});
 ```
-
 ## Documentation for API Endpoints
 [DEMO Application](./demo/demo.js) contain various examples of using the Aspose.OCR SDK NodeJS.
 
@@ -195,4 +172,4 @@ Image formats suported: .bmp, .dib .jpeg, .jpg, .jpe .jp2 .png .webp .pbm, .pgm,
 | [GitHub](https://github.com/aspose-ocr-cloud/aspose-ocr-cloud-dotnet) |[GitHub](https://github.com/aspose-ocr-cloud/aspose-ocr-cloud-java) | [GitHub](https://github.com/aspose-ocr-cloud/aspose-ocr-cloud-python)|[GitHub](https://github.com/aspose-ocr-cloud/aspose-ocr-cloud-android)|[GitHub](https://github.com/aspose-ocr-cloud/aspose-ocr-cloud-nodejs)
 | [NuGet](https://www.nuget.org/packages/Aspose.ocr-Cloud/)| [Maven](https://repository.aspose.cloud/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-ocr-cloud) | [PIP](https://pypi.org/project/aspose-ocr-cloud/) | [Maven](https://repository.aspose.cloud/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-ocr-cloud) | [NPM](https://www.npmjs.com/package/@asposecloud/aspose-ocr-cloud)
 
-[Product Page](https://products.aspose.cloud/ocr/nodejs) | [Documentation](https://docs.aspose.cloud/display/ocrcloud/Home) | [API Reference](https://apireference.aspose.cloud/ocr/) | [Code Samples](https://github.com/aspose-ocr-cloud/aspose-ocr-cloud-java) | [Blog](https://blog.aspose.cloud/category/ocr/) | [Free Support](https://forum.aspose.cloud/c/ocr) | [Free Trial](https://dashboard.aspose.cloud/#/apps)
+[Product Page](https://products.aspose.cloud/ocr/) | [Documentation](https://docs.aspose.cloud/display/ocrcloud/Home) | [API Reference](https://apireference.aspose.cloud/ocr/) | [Code Samples](https://github.com/aspose-ocr-cloud/aspose-ocr-cloud-java) | [Blog](https://blog.aspose.cloud/category/ocr/) | [Free Support](https://forum.aspose.cloud/c/ocr) | [Free Trial](https://dashboard.aspose.cloud/#/apps)
