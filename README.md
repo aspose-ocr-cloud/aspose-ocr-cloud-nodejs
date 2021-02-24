@@ -1,3 +1,5 @@
+![](https://img.shields.io/badge/api-v3.0-lightgrey)  [![GitHub license](https://img.shields.io/github/license/aspose-ocr-cloud/aspose-ocr-cloud-nodejs)](https://github.com/aspose-ocr-cloud/aspose-ocr-cloud-node/blob/master/LICENSE)
+
 # Aspose.OCR Cloud Node.js SDK
 [Aspose.OCR Cloud](https://products.aspose.cloud/ocr/cloud) is a simple SDK used to add text recognition to your app with merely a few lines of code.
 
@@ -7,15 +9,21 @@ It is easy to get started with Aspose.OCR Cloud, and there is nothing to install
 
 - API version: 21.2.0
 - Package version: 21.2.0
+- 
+## OCR Processing Features
+- Recognize and extract text from images via OCR.
+- Specify the area of the image from which you want to extract text.
+- Perform OCR to recognize text from the whole or partial image.
+- Fetch character and font information from raster images.
+- Return the response in the JSON or XML format.
+- Supports English text recognition.
 
-## Features:
-- Automatic skew correction
-- Automatic and manual document layout detection
-- Advanced automated image pre-processing
-- Extract and recognize text from images via OCR
-- Supports multiple international languages
-- High speed with no hardware resources
-- Multilanguage
+## Save OCR As
+TXT, PDF, HOCR
+
+## Read OCR Formats
+BMP, JPG, GIF, PNG, TIFF
+
 
 ## How to use the SDK?
 
@@ -172,4 +180,4 @@ Image formats suported: .bmp, .dib .jpeg, .jpg, .jpe .jp2 .png .webp .pbm, .pgm,
 | [GitHub](https://github.com/aspose-ocr-cloud/aspose-ocr-cloud-dotnet) |[GitHub](https://github.com/aspose-ocr-cloud/aspose-ocr-cloud-java) | [GitHub](https://github.com/aspose-ocr-cloud/aspose-ocr-cloud-python)|[GitHub](https://github.com/aspose-ocr-cloud/aspose-ocr-cloud-android)|[GitHub](https://github.com/aspose-ocr-cloud/aspose-ocr-cloud-nodejs)
 | [NuGet](https://www.nuget.org/packages/Aspose.ocr-Cloud/)| [Maven](https://repository.aspose.cloud/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-ocr-cloud) | [PIP](https://pypi.org/project/aspose-ocr-cloud/) | [Maven](https://repository.aspose.cloud/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-ocr-cloud) | [NPM](https://www.npmjs.com/package/@asposecloud/aspose-ocr-cloud)
 
-[Product Page](https://products.aspose.cloud/ocr/) | [Documentation](https://docs.aspose.cloud/display/ocrcloud/Home) | [API Reference](https://apireference.aspose.cloud/ocr/) | [Code Samples](https://github.com/aspose-ocr-cloud/aspose-ocr-cloud-java) | [Blog](https://blog.aspose.cloud/category/ocr/) | [Free Support](https://forum.aspose.cloud/c/ocr) | [Free Trial](https://dashboard.aspose.cloud/#/apps)
+[Product Page](https://products.aspose.cloud/ocr/) | [Documentation](https://docs.aspose.cloud/display/ocrcloud/Home) | [API Reference](https://apireference.aspose.cloud/ocr/) | [Code Samples](https://github.com/aspose-ocr-cloud/aspose-ocr-cloud-nodejs) | [Blog](https://blog.aspose.cloud/category/ocr/) | [Free Support](https://forum.aspose.cloud/c/ocr) | [Free Trial](https://dashboard.aspose.cloud/#/apps)
