@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/api-v3.0-lightgrey)  [![GitHub license](https://img.shields.io/github/license/aspose-ocr-cloud/aspose-ocr-cloud-nodejs)](https://github.com/aspose-ocr-cloud/aspose-ocr-cloud-node/blob/master/LICENSE)
+![](https://img.shields.io/badge/api-v5.0-lightgrey)  [![GitHub license](https://img.shields.io/github/license/aspose-ocr-cloud/aspose-ocr-cloud-nodejs)](https://github.com/aspose-ocr-cloud/aspose-ocr-cloud-node/blob/master/LICENSE)
 
 [Aspose.OCR Cloud](https://products.aspose.cloud/ocr/) is an optical character recognition as a service. With it, you can easily add OCR functionality to almost any device or platform, including netbooks, mini PCs, or even entry-level smartphones.
 
