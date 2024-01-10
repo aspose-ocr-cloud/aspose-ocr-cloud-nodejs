@@ -1,36 +1,48 @@
 ![](https://img.shields.io/badge/api-v3.0-lightgrey)  [![GitHub license](https://img.shields.io/github/license/aspose-ocr-cloud/aspose-ocr-cloud-nodejs)](https://github.com/aspose-ocr-cloud/aspose-ocr-cloud-node/blob/master/LICENSE)
 
-# Aspose.OCR Cloud Node.js SDK
-[Aspose.OCR Cloud](https://products.aspose.cloud/ocr/cloud) is a simple SDK used to add text recognition to your app with merely a few lines of code.
+[Aspose.OCR Cloud](https://products.aspose.cloud/ocr/) is an optical character recognition as a service. With it, you can easily add OCR functionality to almost any device or platform, including netbooks, mini PCs, or even entry-level smartphones.
 
-In detail, it's a set of SDKs for optical character recognition and document scanning in our Cloud. It supports reading and recognizing text from most commonly used raster image formats. Just pass a specific image to the Aspose.OCR Cloud API, and it will return a response with recognized text.
+Our engine can read text from images, photos, screenshots and scanned PDFs in a wide variety of European, Cyrillic and Oriental fonts, returning results in the most popular document formats. Powerful built-in image processing filters based on neural networks automatically correct skewed and distorted images, automatically remove dirt, smudges, scratches, glare and other image defects that can affect recognition accuracy. To further improve the results, Aspose.OCR Cloud has a built-in spell checker that automatically replaces misspelled words and saves you the trouble of manually correcting the recognition results.
 
-It is easy to get started with Aspose.OCR Cloud, and there is nothing to install. Create an account at Aspose Cloud and get your application information, then you are ready to use [SDKs](#asposeocr-cloud-sdks)
+Even the complex recognition tasks can be done with a couple of API calls. To make interacting with Aspose.OCR Cloud services from .NET applications even easier, we provide the software development kit (SDK) for .NET. It handles all the routine operations such as establishing connections, sending API requests, and parsing responses, wrapping all these tasks into a few simple classes.
 
-- API version: 21.2.0
-- Package version: 21.2.0
-- 
-## OCR Processing Features
-- Recognize and extract text from images via OCR.
-- Specify the area of the image from which you want to extract text.
-- Perform OCR to recognize text from the whole or partial image.
-- Fetch character and font information from raster images.
-- Return the response in the JSON or XML format.
-- Supports English text recognition.
+Aspose.OCR Cloud SDK for .NET is open source under the MIT license. You can freely use it for any projects, including commercial and proprietary applications, as well as modify any part of its code.
 
-## Save OCR As
-TXT, PDF, HOCR
+## Try Online
+[Image to Text](https://products.aspose.app/ocr/scan-image) | [Image to Searchable PDF](https://products.aspose.app/ocr/ocr-to-pdf) | [PDF OCR](https://products.aspose.app/ocr/pdf-ocr)| [Receipt Scanner](https://products.aspose.app/ocr/scan-receipt)
+:---: | :---: | :---:| :---:
+[![Scan Image](https://products.aspose.app/ocr/scan-image/img/ocr-recognize-48.png)](https://products.aspose.app/ocr/scan-image) | [![Image to Searchable PDF](https://products.aspose.app/ocr/scan-image/img/ocr-to-pdf-4-48.png)](https://products.aspose.app/ocr/ocr-to-pdf) | [![PDF OCR](https://products.aspose.app/ocr/scan-image/img/ocr-to-pdf-2-48.png)](https://products.aspose.app/ocr/pdf-ocr) | [![Receipt Scanner](https://products.aspose.app/ocr/scan-image/img/aspose-scan-receipt-48.png)](https://products.aspose.app/ocr/scan-receipt) 
 
-## Read OCR Formats
-BMP, JPG, GIF, PNG, TIFF
+## Get started
 
+Aspose.OCR Cloud is an on-demand service with a free tier. In order to use Aspose.OCR Cloud service, you must create an account at **Aspose Cloud API**:
 
-## How to use the SDK?
+1. Go to https://dashboard.aspose.cloud/
+2. If you are already registered with Aspose, sign in with your user name and password.  
+   Otherwise, click **Don’t have an account? Sign Up** link and create a new account.
+3. [Check out more information](https://docs.aspose.cloud/ocr/subscription/) about available subscription plans and a free tier limits.
 
-Our API is completely independent of your operating system, database system, or development language. You can use any language and platform that supports HTTP to interact with our API. However, manually writing client code can be difficult, error-prone, and time-consuming. Therefore, we have provided and support [SDKs](#asposeocr-cloud-sdks) in many development languages to make it easier to integrate with us.
+Aspose values your privacy and takes technical, security and organizational measures to protect your data from unauthorized use, accidental loss or disclosure. Read our [Privacy Policy](https://about.aspose.cloud/legal/privacy-policy) and [Terms of Service](https://about.aspose.cloud/legal/tos) for details.
 
-### Prerequisites
-To use Aspose OCR for Cloud Node.js SDK you need to register an account with [Aspose Cloud](https://www.aspose.cloud/) and lookup/create App Key and SID at [Cloud Dashboard](https://dashboard.aspose.cloud/#/apps). There is a free quota available. For more details, see [Aspose Cloud Pricing](https://purchase.aspose.cloud/pricing).
+### Authorization
+
+Aspose.OCR Cloud follows industry standards and best practices to keep your data secure. All communication with OCR REST API is done using JWT authentication, which provides an open-standard, highly secure way to exchange information. Time-limited JWT tokens are generated using _Client ID_ and _Client Secret_ credentials that are specific for each application. To obtain the credentials:
+
+1. Sign in to [Aspose Cloud API Dashboard](https://dashboard.aspose.cloud/).
+2. Go to [**Applications**](https://dashboard.aspose.cloud/applications) page.
+3. Click **Create New Application** button.
+4. Give the application an easily recognizable name so it can be quickly found in a long list, and provide an optional detailed description.
+5. Create the cloud storage by clicking the _plus_ icon and following the required steps. You can also reuse existing storage, if available.   
+   Aspose.OCR Cloud uses its own internal storage, so you can provide the bare minimum storage options:
+
+    - Type: **Internal storage**
+    - Storage name: _Any name you like_
+    - Storage mode: **Retain files for 24 hours**
+
+6. Click **Save** button.
+7. Click the newly created application and copy the values from **Client Id** and **Client Secret** fields.
+8. Pass in the values from the **Client ID** and **Client Secret** fields when initializing the required OCR API.
+
 
 ### Installation
 
@@ -45,139 +57,69 @@ Install it via:
     npm install https://github.com/aspose-ocr-cloud/aspose-ocr-cloud-nodejs --save
 ```
 
-## Getting Started
+### Running demo
 
-1. **Sign Up**. Before you begin, you need to sign up for an account on our [Dashboard](https://dashboard.aspose.cloud/) and retrieve your [credentials](https://dashboard.aspose.cloud/#/apps).
-2. **Minimum requirements**. This SDK requires [Node.js 6.x and higher](https://nodejs.org/download/release/).
-3. **Install Aspose.OCR Cloud Node.js SDK**.
+1. Check out the SDK [demo project](https://github.com/aspose-ocr-cloud/aspose-ocr-cloud-nodejs/demo).
+2. Open [demo.js](/demo/demo.js) script.
+3. Provide your **Client ID** and **Client Secret** (see _Authorization_ above).
+4. Run the project.
 
-Please, add the following [nmp package](https://www.npmjs.com/package/@asposecloud/aspose-ocr-cloud) to your project.json as a dependency.
-```json
-{
-  "dependencies": {
-    "@asposecloud/aspose-ocr-cloud":"^21.2.0"
-  }
-}
-```
+## What was changed in version 23.12.0
 
-Please follow the [installation](#installation) instruction and execute the following JS code:   
+A summary of recent changes, enhancements and bug fixes in **Aspose.OCR Cloud SDK for .NET 23.12.0** release:
 
-NOTE: Use the helper from /test/helper.js for an upload and save data.
+Key | Summary | Category
+--- | ------- | --------
+OCR&#8209;3737 | Added a free API for evaluating image recognition without [authorization](/ocr/authorization/).<br />Some restrictions apply. See below for details. | New feature
 
-```javascript
+### Public API changes and backwards compatibility
 
-    // Get keys from aspose site.
-    // There is free quota available. 
-    // For more details, see https://purchase.aspose.cloud/pricing
-	
-var conf = {
-    "basePath":"https://api.aspose.cloud/v3.0",
-    "authPath":"https://api.aspose.cloud/connect/token",
-    "apiKey":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "appSID":"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
-    
-};
+This section lists all public API changes introduced in **Aspose.OCR Cloud SDK for .NET 23.12.0** that may affect the code of existing applications.
 
-//Create storage api for upload to server
-var fs = require('fs');
-var path = require('path');
-var instance = new Asposeocrcloud.OcrApi(conf);
+#### Added public APIs:
 
-var buffer = Buffer.alloc(1024 * 50);
-var fileData = fs.readFileSync(YOUR_FILE_PATH, buffer);
+The following public APIs have been introduced in this release:
 
-instance.RecognizeFromContentAuto(fileData, function (err, data, res) {
-    console.log(data);
-});
+##### Image recognition evaluation
 
-```
+The following new classes have been added:
 
-##### Local development
+Class | Description
+----- | -----------
+`RecognizeImageTrialApi` | Image recognition API that works without authorization.
 
-To use the library locally without publishing to a remote npm registry, first install the dependencies by changing 
-into the directory containing `package.json` (and this README). Let's call this `JAVASCRIPT_CLIENT_DIR`. Then run:
+**Important:** In recognition results, 10% of the words are substituted with asterisks (`*`). The sequence of masked words remains unchanged upon re-submitting the identical image for recognition.
 
-```shell
-npm install
-```
+[Learn more...](https://docs.aspose.cloud/ocr/recognize-image/)
 
-Next, [link](https://docs.npmjs.com/cli/link) it globally in npm with the following, also from `JAVASCRIPT_CLIENT_DIR`:
+#### Updated public APIs:
 
-```shell
-npm link
-```
+_No changes_
 
-Finally, switch to the directory you want to use your package from, and run:
+#### Removed public APIs:
 
-```shell
-npm link /path/to/<JAVASCRIPT_CLIENT_DIR>
-```
+_No changes._
 
-You should now be able to `require('@asposecloud/aspose-ocr-cloud')` in javascript files from the directory you ran the last 
-command above from.
+## Other Aspose.OCR Cloud SDKs
 
+- [Aspose.OCR Cloud for Java](https://github.com/aspose-ocr-cloud/aspose-ocr-cloud-java)  
+  Call Aspose.OCR Cloud API from cross-platform Java apps.
+- [Aspose.OCR Cloud for Python](https://github.com/aspose-ocr-cloud/aspose-ocr-cloud-python)  
+  Natively integrate OCR features into Python applications.
+- [Aspose.OCR Cloud for Node.js](https://github.com/aspose-ocr-cloud/aspose-ocr-cloud-nodejs)  
+  Add OCR functionality to AWS Lambda, Azure Functions, services, and applications written in Node.js by querying our REST API.
+- [Aspose.OCR Cloud for Android](https://github.com/aspose-ocr-cloud/aspose-ocr-cloud-android)  
+  Turn a smartphone into a full featured OCR scanner. Aspose.OCR service runs in the cloud and supports even entry-level and legacy smartphones.
 
-### Install For browser
-The library also works in the browser environment via npm and [browserify](http://browserify.org/). After following
-the above steps with Node.js and installing browserify with `npm install -g browserify`,
-perform the following (assuming *main.js* is your entry file, that's to say your javascript file where you actually 
-use this library):
+## Resources
 
-```shell
-browserify main.js > bundle.js
-```
+Find more information on Aspose.OCR Cloud and get professional help:
 
-Then include *bundle.js* in the OCR pages.
-
-### Webpack Configuration
-Using Webpack you may encounter the following error: "Module not found: Error:
-Cannot resolve module", most certainly you should disable AMD loader. Add/merge
-the following section to your webpack config:
-
-```javascript
-module: {
-  rules: [
-    {
-      parser: {
-        amd: false
-      }
-    }
-  ]
-}
-```
-
-## OCR from URL in Node.Js
-
-```js
-	// Get your ClientId and ClientSecret from https://dashboard.aspose.cloud (free registration required).
-	var conf = {
-		"apiKey":"MY_CLIENT_SECRET",
-		"appSID":"MY_CLIENT_ID",
-		"basePath":"https://api.aspose.cloud/v3.0",
-		"authPath":"https://api.aspose.cloud/connect/token"
-	};
-	
-	const ocrApi = new Asposeocrcloud.OcrApi(conf);
-
-	var imageUrl = "https://upload.wikimedia.org/wikipedia/commons/2/2f/Book_of_Abraham_FirstPage.png";
-	ocrApi.RecognizeFromUrlAuto(imageUrl, function (err, data, res) {
-		console.log(data);
-	});
-```
-## Documentation for API Endpoints
-[DEMO Application](./demo/demo.js) contain various examples of using the Aspose.OCR SDK NodeJS.
-
-Detailed API Reference is avalable at [/docs/](./docs/latest/index.html) folder.
-
-<a name="ocr_api"></a>
-#### OCR API
-Image formats suported: .bmp, .dib .jpeg, .jpg, .jpe .jp2 .png .webp .pbm, .pgm, .ppm .pxm, .pnm .pfm .sr, .ras .tiff, .tif .exr .hdr, .pic
-
-## Aspose.OCR Cloud SDKs in Popular Languages
-
-| .NET | Java | Python| Android | NodeJS |
-|---|---|---|---|---|
-| [GitHub](https://github.com/aspose-ocr-cloud/aspose-ocr-cloud-dotnet) |[GitHub](https://github.com/aspose-ocr-cloud/aspose-ocr-cloud-java) | [GitHub](https://github.com/aspose-ocr-cloud/aspose-ocr-cloud-python)|[GitHub](https://github.com/aspose-ocr-cloud/aspose-ocr-cloud-android)|[GitHub](https://github.com/aspose-ocr-cloud/aspose-ocr-cloud-nodejs)
-| [NuGet](https://www.nuget.org/packages/Aspose.ocr-Cloud/)| [Maven](https://repository.aspose.cloud/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-ocr-cloud) | [PIP](https://pypi.org/project/aspose-ocr-cloud/) | [Maven](https://repository.aspose.cloud/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-ocr-cloud) | [NPM](https://www.npmjs.com/package/@asposecloud/aspose-ocr-cloud)
-
-[Product Page](https://products.aspose.cloud/ocr/) | [Documentation](https://docs.aspose.cloud/display/ocrcloud/Home) | [API Reference](https://apireference.aspose.cloud/ocr/) | [Code Samples](https://github.com/aspose-ocr-cloud/aspose-ocr-cloud-nodejs) | [Blog](https://blog.aspose.cloud/category/ocr/) | [Free Support](https://forum.aspose.cloud/c/ocr) | [Free Trial](https://dashboard.aspose.cloud/#/apps)
+- [Documentation](https://docs.aspose.cloud/ocr/)
+- [GitHub repositories](https://github.com/aspose-ocr-cloud)
+- [Free Support Forum](https://forum.aspose.cloud/c/ocr/12)
+- [Paid Support Helpdesk](https://helpdesk.aspose.cloud/)
+- [Blog](https://blog.aspose.cloud/category/ocr/)
+- [Free OCR Apps](https://products.aspose.app/ocr/family/)
+- [Aspose Cloud Pricing](https://purchase.aspose.cloud/pricing)
+- [Terms of Service](https://about.aspose.cloud/legal/tos/)
